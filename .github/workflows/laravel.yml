@@ -32,4 +32,7 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
+    - name: create Database
+      run: php artisan migrate:fresh --datebase sqlite_testing
+    - name: Run Tests
       run: vendor/bin/phpunit
