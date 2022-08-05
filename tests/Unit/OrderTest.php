@@ -27,7 +27,7 @@ class OrderTest extends PHPUnit\Framework\TestCase
     function createOrderWithProducts()
     {
         $order = new Order();
-        $product = new Product('Fallout 4',25);
+        $product = new Product('Fallout 4',30);
         $product2 = new Product('Pillowcase',7);
 
         $order->add($product);
