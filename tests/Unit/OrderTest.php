@@ -21,7 +21,7 @@ class OrderTest extends PHPUnit\Framework\TestCase
     {
         $order = $this->createOrderWithProducts();
 
-        $this->assertEquals(32,$order->total());
+        $this->assertEquals(37,$order->total());
     }
 
     function createOrderWithProducts()
