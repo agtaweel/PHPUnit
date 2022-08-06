@@ -1,3 +1,4 @@
+name: test-ci-cd
 
 on:
   push:
@@ -31,4 +32,4 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: vendor/bin/phpunit
+      run: php artisan test
