@@ -46,15 +46,16 @@ jobs:
 #        script: |
 #          docker pull ${{ steps.meta.outputs.tags }}
 
-    #manual publish
-#  publish:
-#    runs-on: ubuntu-latest
-#    needs: laravel-tests
-#    steps:
-#      - name: log in server
-#        run: |
-#          ssh -i
-#          cd portal-merchant
-#          git pull origin develop
-#          composer update
-#          php artisan migrate
+      #manual publish
+
+    #  publish:
+    #    runs-on: ubuntu-latest
+    #    needs: laravel-tests
+    #    steps:
+    #      - name: log in server
+    #        run: |
+    #          ssh -i
+    #          cd portal-merchant
+    #          git pull origin develop
+    #          composer update
+    #          php artisan migrate
