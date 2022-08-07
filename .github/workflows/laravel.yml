@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: ramsey/composer-install@2.1.0
-      with:
-        php-version: '8.0'
+      - uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "latest"
+      - uses: "ramsey/composer-install@v2"
     - uses: actions/checkout@v3
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
